@@ -1,29 +1,93 @@
 #test
 #battle ships
+
+#Instrucciones para INSTALAR y ACTIVAR un entorno virtual porque soy burra:
+#instalar virtualenv poniendo en la terminal pip install virtualenv
+#ejecutar en la terminal python -m virtualenv env
+#para activarlo:
+#source env/Scripts/activate
+#para chequear que esté activado ver si aparece el (env) antes de toda la otra mersa
 import pygame
+print(pygame.__version__)
  
 # Initialize pygame
 pygame.init()
  
 # Set up the screen
 Black = (0,0,0)
-screen_width = 800
-screen_height = 600
+screen_width = 700
+screen_height = 700
 screen = pygame.display.set_mode((screen_width, screen_height))
-screen.fill((255, 255, 255))
+background_image = pygame.image.load("./images/Map.png").convert()
+background_image = pygame.transform.scale(background_image, (screen_width, screen_height))
+BL = pygame.image.load("./images/BL.png").convert()
+BL = pygame.transform.scale(BL, (screen_width, screen_height))
+BC = pygame.image.load("./images/BC.png").convert()
+BC = pygame.transform.scale(BC, (screen_width, screen_height))
+BR = pygame.image.load("./images/BR.png").convert()
+BR = pygame.transform.scale(BR, (screen_width, screen_height))
+CL = pygame.image.load("./images/CL.png").convert()
+CL = pygame.transform.scale(CL, (screen_width, screen_height))
+MC = pygame.image.load("./images/MC.png").convert()
+MC = pygame.transform.scale(MC, (screen_width, screen_height))
+CR = pygame.image.load("./images/CR.png").convert()
+CR = pygame.transform.scale(CR, (screen_width, screen_height))
+TL = pygame.image.load("./images/TL.png").convert()
+TL = pygame.transform.scale(TL, (screen_width, screen_height))
+TC = pygame.image.load("./images/TC.png").convert()
+TC = pygame.transform.scale(TC, (screen_width, screen_height))
+TR = pygame.image.load("./images/TR.png").convert()
+TR = pygame.transform.scale(TR, (screen_width, screen_height))
+details = pygame.image.load("./images/details.png").convert()
+details = pygame.transform.scale(details, (screen_width, screen_height))
  
 #Load The images
-imp = pygame.image.load("Cross.png")
-imp = pygame.transform.scale(imp, (100,100))
-imp2 = pygame.image.load("Nought.png")
-imp2 = pygame.transform.scale(imp2, (100,100))
+imp = pygame.image.load("./images/Map.png")
+imp = pygame.transform.scale(imp,(700,700))
+imp2 = pygame.image.load("./images/BL.png")
+imp2 = pygame.transform.scale(imp2,(700,700))
+imp3 = pygame.image.load("./images/BC.png")
+imp3 = pygame.transform.scale(imp3,(700,700))
+imp4 = pygame.image.load("./images/BR.png")
+imp4 = pygame.transform.scale(imp4,(700,700))
+imp5 = pygame.image.load("./images/CL.png")
+imp5 = pygame.transform.scale(imp5,(700,700))
+imp6 = pygame.image.load("./images/MC.png")
+imp6 = pygame.transform.scale(imp6,(700,700))
+imp7 = pygame.image.load("./images/CR.png")
+imp7 = pygame.transform.scale(imp7,(700,700))
+imp8 = pygame.image.load("./images/TL.png")
+imp8 = pygame.transform.scale(imp8,(700,700))
+imp9 = pygame.image.load("./images/TC.png")
+imp9 = pygame.transform.scale(imp9,(700,700))
+imp10 = pygame.image.load("./images/TR.png")
+imp10 = pygame.transform.scale(imp10,(700,700))
+imp11 = pygame.image.load("./images/details.png")
+imp11 = pygame.transform.scale(imp11,(700,700))
+
+
+
  
 #initilize the font
-font = pygame.font.SysFont("Arial", 32)
+font = pygame.font.SysFont("Times New Roman", 32)
+
+# Dibujar el fondo del mapa centrado
+screen.blit(background_image, ((screen_width - background_image.get_width()) // 2, (screen_height - background_image.get_height()) // 2))
+
  
 def RedrawGameWindow():
  
-  screen.fill((255, 255, 255))
+  
+  BL
+  BC
+  BR
+  CL
+  MC
+  CR
+  TL
+  TC
+  TR
+  background_image
  
   global G00
   global G01
@@ -456,7 +520,7 @@ while running:
       if event.type == pygame.QUIT: #Checks whether you pressed the X button
         running = False
    
-    text = font.render("Tic Tac toe ", True, (0, 0, 0))  # Render the text
+    text = font.render("", True, (0, 0, 0))  # Render the text
     text_rect = text.get_rect(center=(screen_width/2, 100))  # Get the rectangle for the text
    
     #text2 = font.render(RowMsg, True, (0, 0, 0))  # Render the text
