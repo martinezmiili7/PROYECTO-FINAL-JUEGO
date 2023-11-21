@@ -42,11 +42,13 @@ TC = pygame.image.load("./images/TC.png")
 TC = pygame.transform.scale(TC, (screen_width, screen_height))
 TR = pygame.image.load("./images/TR.png")
 TR = pygame.transform.scale(TR, (screen_width, screen_height))
-#####################detalles y outline##############
+#####################detalles, coronas y outline##############
 details = pygame.image.load("./images/details.png")
 details = pygame.transform.scale(details, (screen_width, screen_height))
 outline = pygame.image.load("./images/outline.png")
 outline = pygame.transform.scale(outline, (screen_width, screen_height))
+red = pygame.image.load("./images/red.png")
+blue = pygame.image.load("./images/blue.png")
 ##################países en rojo######################
 BLR = pygame.image.load("./images/RED BL.png")
 BLR = pygame.transform.scale(BLR, (screen_width, screen_height))
@@ -131,6 +133,8 @@ imp11 = pygame.image.load("./images/details.png")
 imp11 = pygame.transform.scale(imp11,(700,700))
 imp12 = pygame.image.load("./images/outline.png")
 imp12 = pygame.transform.scale(imp12,(700,700))
+imp31 = pygame.image.load("./images/red.png")
+imp32 = pygame.image.load("./images/blue.png")
 ####países en rojo
 imp13 = pygame.image.load("./images/RED BL.png")
 imp13 = pygame.transform.scale(imp13,(700,700))
@@ -169,6 +173,7 @@ imp29 = pygame.image.load("./images/BLUE TC.png")
 imp29 = pygame.transform.scale(imp29,(700,700))
 imp30 = pygame.image.load("./images/BLUE TR.png")
 imp30 = pygame.transform.scale(imp30,(700,700))
+
 
 
 
@@ -234,7 +239,7 @@ def RedrawGameWindow():
  
   grid = [[" "," "," "],[" "," "," "],[" "," "," "]]
  
-  pygame.display.flip()
+  pygame.display.update()
  
 def displayGrid(grid):
   print(" " + grid[0][0] + " | " + grid[0][1] + " | " + grid[0][2])
@@ -249,170 +254,170 @@ def checkGridX(grid):
   #Chequea las filas
 
   if grid[0][0]=="X" and grid[0][1]=="X" and grid[0][2]=="X":
-    RowMsg = "Three Xs in a row."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print(RowMsg)
     #winner = True
      
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
-    text_rect3 = text.get_rect(center=(screen_width/2, 700))
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
+    text_rect3 = text.get_rect(center=(screen_width/2, screen_height/3))
     screen.blit(text3, text_rect3)
      
   if grid[1][0]=="X" and grid[1][1]=="X" and grid[1][2]=="X":
-    RowMsg = "Three Xs in a row."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print(RowMsg)
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[2][0]=="X" and grid[2][1]=="X" and grid[2][2]=="X":
-    RowMsg = "Three Xs in a row."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Xs in a row.")
+    print("Gana el Rey Rojo.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
 
   #Chequea las columnas
   if grid[0][0]=="X" and grid[1][0]=="X" and grid[2][0]=="X":
-    RowMsg = "Three Xs in a Collum."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Xs in a Collum.")
+    print("Gana el Rey Rojo.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[0][1]=="X" and grid[1][1]=="X" and grid[2][1]=="X":
-    RowMsg = "Three Xs in a Collum."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Xs in a Collum.")
+    print("Gana el Rey Rojo.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[0][2]=="X" and grid[1][2]=="X" and grid[2][2]=="X":
-    RowMsg = "Three Xs in a Collum."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Xs in a Collum.")
+    print("Gana el Rey Rojo.")
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   #Chequea las diagonales
   if grid[2][0]=="X" and grid[1][1]=="X" and grid[0][2]=="X":
-    RowMsg = "Three Xs in a Diagonal."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Xs in a Diagonal.")
+    print("Gana el Rey Rojo.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[0][0]=="X" and grid[1][1]=="X" and grid[2][2]=="X":
-    RowMsg = "Three Xs in a Diagonal."
+    RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Xs in a diagonal.")
+    print("Gana el Rey Rojo.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
 def checkGrid0(grid):
  
   if grid[0][0]=="O" and grid[0][1]=="O" and grid[0][2]=="O":
-    RowMsg = "Three 0s in a row."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three 0s in a row.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[1][0]=="O" and grid[1][1]=="O" and grid[1][2]=="O":
-    RowMsg = "Three 0s in a row."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three 0s in a row.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[2][0]=="O" and grid[2][1]=="O" and grid[2][2]=="O":
-    RowMsg = "Three 0s in a row."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three 0s in a row.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   #Checks The Collums
  
   if grid[0][0]=="O" and grid[1][0]=="O" and grid[2][0]=="O":
-    RowMsg = "Three 0s in a Collum."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three 0s in a Collum.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[0][1]=="O" and grid[1][1]=="O" and grid[2][1]=="O":
-    RowMsg = "Three 0s in a Collum."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three 0s in a Collum.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[0][2]=="O" and grid[1][2]=="O" and grid[2][2]=="O":
-    RowMsg = "Three 0s in a Collum."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three 0s in a Collum.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   #Checks Diagonals
  
   if grid[2][0]=="O" and grid[1][1]=="O" and grid[0][2]=="O":
-    RowMsg = "Three 0s in a diagonal."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Os in a Diagonal.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
   if grid[0][0]=="O" and grid[1][1]=="O" and grid[2][2]=="O":
-    RowMsg = "Three 0s in a diagonal."
+    RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
-    print("Three Os in a diagonal.")
+    print("Gana el Rey Azul.")
     #winner = True
     screen.blit(text2, text_rect2)
-    text3 = font.render("Press R to restart", True, (0, 0, 0))  # Render the text
+    text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(screen_width/2, 700))
     screen.blit(text3, text_rect3)
  
@@ -454,9 +459,9 @@ while running:
               if Turn == True:
                 grid[row][col] = "X"
                 Turn = False
-                screen.blit(imp, (250,150))
+                screen.blit(imp31, (250,150))
               else:
-                screen.blit(imp2, (250, 150))
+                screen.blit(imp32, (250, 150))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -477,9 +482,9 @@ while running:
               if Turn == True:
                 grid[row][col] = "X"
                 Turn = False
-                screen.blit(imp, (350,150))
+                screen.blit(imp31, (350,150))
               else:
-                screen.blit(imp2, (350,150))
+                screen.blit(imp32, (350,150))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -498,9 +503,9 @@ while running:
               if Turn == True:
                 grid[row][col] = "X"
                 Turn = False
-                screen.blit(imp, (450,150))
+                screen.blit(imp31, (450,150))
               else:
-                screen.blit(imp2, (450,150))
+                screen.blit(imp32, (450,150))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -516,11 +521,11 @@ while running:
               print("Stop")
             else:
               if Turn == True:
-                screen.blit(imp, (250,250))
+                screen.blit(imp31, (250,250))
                 grid[row][col] = "X"
                 Turn = False
               else:
-                screen.blit(imp2, (250,250))
+                screen.blit(imp32, (250,250))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -536,11 +541,11 @@ while running:
               print("Stop")
             else:
               if Turn == True:
-                screen.blit(imp, (350,250))
+                screen.blit(imp31, (350,250))
                 grid[row][col] = "X"
                 Turn = False
               else:
-                screen.blit(imp2, (350,250))
+                screen.blit(imp32, (350,250))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -556,11 +561,11 @@ while running:
               print("Stop")
             else:
               if Turn == True:
-                screen.blit(imp, (450,250))
+                screen.blit(imp31, (450,250))
                 grid[row][col] = "X"
                 Turn = False
               else:
-                screen.blit(imp2, (450,250))
+                screen.blit(imp32, (450,250))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -576,11 +581,11 @@ while running:
               print("Stop")
             else:
               if Turn == True:
-                screen.blit(imp, (250,350))
+                screen.blit(imp31, (250,350))
                 grid[row][col] = "X"
                 Turn = False
               else:
-                screen.blit(imp2, (250,350))
+                screen.blit(imp32, (250,350))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -596,12 +601,12 @@ while running:
               print("Stop")
             else:
               if Turn == True:
-                screen.blit(imp, (350,350))
+                screen.blit(imp31, (350,350))
                 grid[row][col] = "X"
                 Turn = False
                
               else:
-                screen.blit(imp2, (350,350))
+                screen.blit(imp32, (350,350))
                 grid[row][col] = "O"
                 Turn = True
                 checkGrid0(grid)
@@ -617,12 +622,12 @@ while running:
               print("Stop")
             else:
               if Turn == True:
-                screen.blit(imp, (450,350))
+                screen.blit(imp31, (450,350))
                 grid[row][col] = "X"
                 Turn = False
                 checkGridX(grid)
               else:
-                screen.blit(imp2, (450,350))
+                screen.blit(imp32, (450,350))
                
                 grid[row][col] = "O"
                 Turn = True
@@ -640,7 +645,7 @@ while running:
     text_rect = text.get_rect(center=(screen_width/2, 100))  # Get the rectangle for the text
    
     #text2 = font.render(RowMsg, True, (0, 0, 0))  # Render the text
-    text_rect2 = text.get_rect(center=(350, 500))
+    text_rect2 = text.get_rect(center=(350, 350))
    
     screen.blit(text, text_rect)
     pygame.display.flip()  # Update the screen
