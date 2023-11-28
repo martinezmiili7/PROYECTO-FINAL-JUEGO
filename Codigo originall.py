@@ -23,25 +23,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 ##############imagen de fondo#################
 background_image = pygame.image.load("./images/Map.png").convert()
 background_image = pygame.transform.scale(background_image, (screen_width, screen_height))
-##############países originales ##############
-BL = pygame.image.load("./images/BL.png")
-BL = pygame.transform.scale(BL, (screen_width, screen_height))
-BC = pygame.image.load("./images/BC.png")
-BC = pygame.transform.scale(BC, (screen_width, screen_height))
-BR = pygame.image.load("./images/BR.png")
-BR = pygame.transform.scale(BR, (screen_width, screen_height))
-CL = pygame.image.load("./images/CL.png")
-CL = pygame.transform.scale(CL, (screen_width, screen_height))
-MC = pygame.image.load("./images/MC.png")
-MC = pygame.transform.scale(MC, (screen_width, screen_height))
-CR = pygame.image.load("./images/CR.png")
-CR = pygame.transform.scale(CR, (screen_width, screen_height))
-TL = pygame.image.load("./images/TL.png")
-TL = pygame.transform.scale(TL, (screen_width, screen_height))
-TC = pygame.image.load("./images/TC.png")
-TC = pygame.transform.scale(TC, (screen_width, screen_height))
-TR = pygame.image.load("./images/TR.png")
-TR = pygame.transform.scale(TR, (screen_width, screen_height))
+
 #####################detalles, coronas y outline##############
 details = pygame.image.load("./images/details.png")
 details = pygame.transform.scale(details, (screen_width, screen_height))
@@ -49,85 +31,14 @@ outline = pygame.image.load("./images/outline.png")
 outline = pygame.transform.scale(outline, (screen_width, screen_height))
 red = pygame.image.load("./images/red.png")
 blue = pygame.image.load("./images/blue.png")
-##################países en rojo######################
-BLR = pygame.image.load("./images/RED BL.png")
-BLR = pygame.transform.scale(BLR, (screen_width, screen_height))
 
-BCR = pygame.image.load("./images/RED BC.png")
-BCR = pygame.transform.scale(BCR, (screen_width, screen_height))
-
-BRR = pygame.image.load("./images/RED BR.png")
-BRR = pygame.transform.scale(BLR, (screen_width, screen_height))
-
-CLR = pygame.image.load("./images/RED CL.png")
-CLR = pygame.transform.scale(CLR, (screen_width, screen_height))
-
-MCR = pygame.image.load("./images/RED MIDDLE.png")
-MCR = pygame.transform.scale(MCR, (screen_width, screen_height))
-
-CRR = pygame.image.load("./images/RED CR.png")
-CRR = pygame.transform.scale(CRR, (screen_width, screen_height))
-
-TLR = pygame.image.load("./images/RED TL.png")
-TLR = pygame.transform.scale(TLR, (screen_width, screen_height))
-
-TCR = pygame.image.load("./images/RED TC.png")
-TCR = pygame.transform.scale(TCR, (screen_width, screen_height))
-
-TRR = pygame.image.load("./images/RED TR.png")
-TRR = pygame.transform.scale(TRR, (screen_width, screen_height))
-##################países en azul######################
-BLB = pygame.image.load("./images/BLUE BL.png")
-BLB = pygame.transform.scale(BLB, (screen_width, screen_height))
-
-BCB = pygame.image.load("./images/BLUE BC.png")
-BCB = pygame.transform.scale(BCB, (screen_width, screen_height))
-
-BRB = pygame.image.load("./images/BLUE BR.png")
-BRB = pygame.transform.scale(BRB, (screen_width, screen_height))
-
-CLB = pygame.image.load("./images/BLUE CL.png")
-CLB = pygame.transform.scale(CLB, (screen_width, screen_height))
-
-MCB = pygame.image.load("./images/BLUE MIDDLE.png")
-MCB = pygame.transform.scale(MCB, (screen_width, screen_height))
-
-CRB = pygame.image.load("./images/BLUE CR.png")
-CRB = pygame.transform.scale(CRB, (screen_width, screen_height))
-
-TLB = pygame.image.load("./images/BLUE TL.png")
-TLB = pygame.transform.scale(TLB, (screen_width, screen_height))
-
-TCB = pygame.image.load("./images/BLUE TC.png")
-TCB = pygame.transform.scale(TCB, (screen_width, screen_height))
-
-TRB = pygame.image.load("./images/BLUE TR.png")
-TRB = pygame.transform.scale(TRB, (screen_width, screen_height))
 
  
 #Load The images
 ####mapa
 imp = pygame.image.load("./images/Map.png")
 imp = pygame.transform.scale(imp,(700,700))
-####países originales
-imp2 = pygame.image.load("./images/BL.png")
-imp2 = pygame.transform.scale(imp2,(700,700))
-imp3 = pygame.image.load("./images/BC.png")
-imp3 = pygame.transform.scale(imp3,(700,700))
-imp4 = pygame.image.load("./images/BR.png")
-imp4 = pygame.transform.scale(imp4,(700,700))
-imp5 = pygame.image.load("./images/CL.png")
-imp5 = pygame.transform.scale(imp5,(700,700))
-imp6 = pygame.image.load("./images/MC.png")
-imp6 = pygame.transform.scale(imp6,(700,700))
-imp7 = pygame.image.load("./images/CR.png")
-imp7 = pygame.transform.scale(imp7,(700,700))
-imp8 = pygame.image.load("./images/TL.png")
-imp8 = pygame.transform.scale(imp8,(700,700))
-imp9 = pygame.image.load("./images/TC.png")
-imp9 = pygame.transform.scale(imp9,(700,700))
-imp10 = pygame.image.load("./images/TR.png")
-imp10 = pygame.transform.scale(imp10,(700,700))
+
 ####detalles y outline
 imp11 = pygame.image.load("./images/details.png")
 imp11 = pygame.transform.scale(imp11,(700,700))
@@ -135,51 +46,17 @@ imp12 = pygame.image.load("./images/outline.png")
 imp12 = pygame.transform.scale(imp12,(700,700))
 imp31 = pygame.image.load("./images/red.png")
 imp32 = pygame.image.load("./images/blue.png")
-####países en rojo
-imp13 = pygame.image.load("./images/RED BL.png")
-imp13 = pygame.transform.scale(imp13,(700,700))
-imp14 = pygame.image.load("./images/RED BC.png")
-imp14 = pygame.transform.scale(imp14,(700,700))
-imp15 = pygame.image.load("./images/RED BR.png")
-imp15 = pygame.transform.scale(imp15,(700,700))
-imp16 = pygame.image.load("./images/RED CL.png")
-imp16 = pygame.transform.scale(imp16,(700,700))
-imp17 = pygame.image.load("./images/RED MIDDLE.png")
-imp17 = pygame.transform.scale(imp17,(700,700))
-imp18 = pygame.image.load("./images/RED CR.png")
-imp18 = pygame.transform.scale(imp18,(700,700))
-imp19 = pygame.image.load("./images/RED TL.png")
-imp19 = pygame.transform.scale(imp19,(700,700))
-imp20 = pygame.image.load("./images/RED TC.png")
-imp20 = pygame.transform.scale(imp20,(700,700))
-imp21 = pygame.image.load("./images/RED TR.png")
-imp21 = pygame.transform.scale(imp21,(700,700))
-####países en azul
-imp22 = pygame.image.load("./images/BLUE BL.png")
-imp22 = pygame.transform.scale(imp22,(700,700))
-imp23 = pygame.image.load("./images/BLUE BC.png")
-imp23 = pygame.transform.scale(imp23,(700,700))
-imp24 = pygame.image.load("./images/BLUE BR.png")
-imp24 = pygame.transform.scale(imp24,(700,700))
-imp25 = pygame.image.load("./images/BLUE CL.png")
-imp25 = pygame.transform.scale(imp25,(700,700))
-imp26 = pygame.image.load("./images/BLUE MIDDLE.png")
-imp26 = pygame.transform.scale(imp26,(700,700))
-imp27 = pygame.image.load("./images/BLUE CR.png")
-imp27 = pygame.transform.scale(imp27,(700,700))
-imp28 = pygame.image.load("./images/BLUE TL.png")
-imp28 = pygame.transform.scale(imp28,(700,700))
-imp29 = pygame.image.load("./images/BLUE TC.png")
-imp29 = pygame.transform.scale(imp29,(700,700))
-imp30 = pygame.image.load("./images/BLUE TR.png")
-imp30 = pygame.transform.scale(imp30,(700,700))
 
 
+#inicializar el puntaje
+puntos_rojo = 0
+puntos_azul= 0
 
 
  
 #initilize the font
 font = pygame.font.Font("Alkhemikal.ttf", 32)
+points_font = pygame.font.Font("Alkhemikal.ttf", 48)
 
 
 
@@ -189,22 +66,20 @@ def RedrawGameWindow():
   # Dibujar las imágenes centradas
   ####Mapa
   screen.blit(background_image, ((screen_width - background_image.get_width()) // 2, (screen_height - background_image.get_height()) // 2))
-  ####países originales
-  screen.blit(BL, ((screen_width - BL.get_width()) // 2, (screen_height - BL.get_height()) // 2))
-  screen.blit(BC, ((screen_width - BC.get_width()) // 2, (screen_height - BC.get_height()) // 2))
-  screen.blit(BR, ((screen_width - BR.get_width()) // 2, (screen_height - BR.get_height()) // 2))
-  screen.blit(CL, ((screen_width - CL.get_width()) // 2, (screen_height - CL.get_height()) // 2))
-  screen.blit(MC, ((screen_width - MC.get_width()) // 2, (screen_height - MC.get_height()) // 2))
-  screen.blit(CR, ((screen_width - CR.get_width()) // 2, (screen_height - CR.get_height()) // 2))
-  screen.blit(TL, ((screen_width - TL.get_width()) // 2, (screen_height - TL.get_height()) // 2))
-  screen.blit(TC, ((screen_width - TC.get_width()) // 2, (screen_height - TC.get_height()) // 2))
-  screen.blit(TR, ((screen_width - TR.get_width()) // 2, (screen_height - TR.get_height()) // 2))
+  
   ####detalles y outline
   screen.blit(details, ((screen_width - details.get_width()) // 2, (screen_height - details.get_height()) // 2))
   screen.blit(outline, ((screen_width - outline.get_width()) // 2, (screen_height - outline.get_height()) // 2))
   ####países rojos
   
-  ####países azules
+  #renderiza puntajes
+  text4 = points_font.render(str(puntos_rojo), True, (0, 0, 0))
+  text_rect4 =text4.get_rect(center=(503, 610))
+  screen.blit(text4, text_rect4)
+
+  text5 = points_font.render(str(puntos_azul), True, (0, 0, 0))
+  text_rect5 =text5.get_rect(center=(603, 610))
+  screen.blit(text5, text_rect5)
 
 
   
@@ -249,14 +124,19 @@ def displayGrid(grid):
   print(" " + grid[2][0] + " | " + grid[2][1] + " | " + grid[2][2])
  
 def checkGridX(grid):
+  global puntos_rojo
   global RowMsg
 
   #Chequea las filas
 
   if grid[0][0]=="X" and grid[0][1]=="X" and grid[0][2]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
+    
     print(RowMsg)
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
      
     screen.blit(text2, text_rect2)
@@ -265,9 +145,12 @@ def checkGridX(grid):
     screen.blit(text3, text_rect3)
      
   if grid[1][0]=="X" and grid[1][1]=="X" and grid[1][2]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print(RowMsg)
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -275,9 +158,12 @@ def checkGridX(grid):
     screen.blit(text3, text_rect3)
  
   if grid[2][0]=="X" and grid[2][1]=="X" and grid[2][2]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Rojo.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -286,9 +172,12 @@ def checkGridX(grid):
 
   #Chequea las columnas
   if grid[0][0]=="X" and grid[1][0]=="X" and grid[2][0]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Rojo.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -296,9 +185,12 @@ def checkGridX(grid):
     screen.blit(text3, text_rect3)
  
   if grid[0][1]=="X" and grid[1][1]=="X" and grid[2][1]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Rojo.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -306,9 +198,12 @@ def checkGridX(grid):
     screen.blit(text3, text_rect3)
  
   if grid[0][2]=="X" and grid[1][2]=="X" and grid[2][2]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Rojo.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
     text_rect3 = text.get_rect(center=(100, 670))
@@ -316,9 +211,12 @@ def checkGridX(grid):
  
   #Chequea las diagonales
   if grid[2][0]=="X" and grid[1][1]=="X" and grid[0][2]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Rojo.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -326,9 +224,12 @@ def checkGridX(grid):
     screen.blit(text3, text_rect3)
  
   if grid[0][0]=="X" and grid[1][1]=="X" and grid[2][2]=="X":
+    puntos_rojo+=1
     RowMsg = "Gana el Rey Rojo."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Rojo.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -336,11 +237,15 @@ def checkGridX(grid):
     screen.blit(text3, text_rect3)
  
 def checkGrid0(grid):
+  global puntos_azul
  
   if grid[0][0]=="O" and grid[0][1]=="O" and grid[0][2]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -348,9 +253,12 @@ def checkGrid0(grid):
     screen.blit(text3, text_rect3)
  
   if grid[1][0]=="O" and grid[1][1]=="O" and grid[1][2]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -358,9 +266,12 @@ def checkGrid0(grid):
     screen.blit(text3, text_rect3)
  
   if grid[2][0]=="O" and grid[2][1]=="O" and grid[2][2]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -370,9 +281,12 @@ def checkGrid0(grid):
   #Checks The Collums
  
   if grid[0][0]=="O" and grid[1][0]=="O" and grid[2][0]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -380,9 +294,12 @@ def checkGrid0(grid):
     screen.blit(text3, text_rect3)
  
   if grid[0][1]=="O" and grid[1][1]=="O" and grid[2][1]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -390,9 +307,12 @@ def checkGrid0(grid):
     screen.blit(text3, text_rect3)
  
   if grid[0][2]=="O" and grid[1][2]=="O" and grid[2][2]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -402,9 +322,12 @@ def checkGrid0(grid):
   #Checks Diagonals
  
   if grid[2][0]=="O" and grid[1][1]=="O" and grid[0][2]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -412,9 +335,12 @@ def checkGrid0(grid):
     screen.blit(text3, text_rect3)
  
   if grid[0][0]=="O" and grid[1][1]=="O" and grid[2][2]=="O":
+    puntos_azul+=1
     RowMsg = "Gana el Rey Azul."
     text2 = font.render(RowMsg, True, (0, 0, 0))
     print("Gana el Rey Azul.")
+    print("Poder del Rey Rojo: ", puntos_rojo)
+    print("Poder del Rey Azul: ", puntos_azul)
     #winner = True
     screen.blit(text2, text_rect2)
     text3 = font.render("Presione R para reiniciar", True, (0, 0, 0))  # Render the text
@@ -646,6 +572,10 @@ while running:
    
     #text2 = font.render(RowMsg, True, (0, 0, 0))  # Render the text
     text_rect2 = text.get_rect(center=(100, 630))
+
+    
+
+    
    
     screen.blit(text, text_rect)
     pygame.display.flip()  # Update the screen
